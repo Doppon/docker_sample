@@ -4,6 +4,7 @@ version: "3"
 # サービス定義
 sevices:
   webserver:
+    build: . # カレントディレクトリのDockerfileを参照してくれている。
     image: ubuntu
     ports:
       - "80:80"
