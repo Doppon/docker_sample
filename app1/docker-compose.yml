@@ -11,13 +11,13 @@ sevices:
     networks:
       - webnet
 
-redis:
-  image: redis
-  networks:
-    - webnet
+  redis:
+    image: redis
+    networks:
+      - webnet
 
 # ネットワーク定義
-network:
+networks:
   webnet:
 
 # データボリューム定義
